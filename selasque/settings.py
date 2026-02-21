@@ -115,7 +115,6 @@ JAZZMIN_SETTINGS = {
     "site_title": "Selasque Admin",
     "site_header": "SELASQUE",
     "site_brand": "SELASQUE",
-    "welcome_sign": "Painel Administrativo",
 
     "theme": "darkly",  # base dark
     "dark_mode_theme": "darkly",
@@ -123,12 +122,24 @@ JAZZMIN_SETTINGS = {
     "custom_css": "css/admin_custom.css",
 
 
-
+"icons": {
+        "auth": "fas fa-users-cog",
+        "auth.user": "fas fa-user",
+        "auth.group": "fas fa-users",
+        "motel.Cliente": "fas fa-user",
+        "motel.Quarto": "fas fa-bed",
+        "motel.Reserva": "fas fa-calendar-check",
+        "motel.Pagamento": "fas fa-file-invoice-dollar"
+    },
+  
     'copyright': 'SELASQUE © 2026',
     'search_model': 'motel.Motel',
     'welcome_sign': 'Bem-vindo ao Motel SELASQUE',
 
     'show_ui_builder': True,
+
+
+    
 }
 
 
