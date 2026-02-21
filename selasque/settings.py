@@ -3,7 +3,10 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
+#####adicionado para teste
+STATICFILES_DIRS = [
+    BASE_DIR / "selasque" / "static",
+]
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
@@ -20,6 +23,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'jazzmin',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -92,9 +96,9 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'pt-br'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Sao_Paulo'
 
 USE_I18N = True
 
@@ -104,4 +108,27 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+
+
+JAZZMIN_SETTINGS = {
+    "site_title": "Selasque Admin",
+    "site_header": "SELASQUE",
+    "site_brand": "SELASQUE",
+    "welcome_sign": "Painel Administrativo",
+
+    "theme": "darkly",  # base dark
+    "dark_mode_theme": "darkly",
+
+    "custom_css": "css/admin_custom.css",
+
+
+
+    'copyright': 'SELASQUE © 2026',
+    'search_model': 'motel.Motel',
+    'welcome_sign': 'Bem-vindo ao Motel SELASQUE',
+
+    'show_ui_builder': True,
+}
+
+
